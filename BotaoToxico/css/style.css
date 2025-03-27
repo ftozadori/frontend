@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+  }
+  
+  .caixa {
+    border: 3px solid #e60073;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #e60073;
+    margin: 0;
+  }
+  
+  .botoes {
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: 0.2s;
+  }
+  
+  #sim {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #nao {
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+  }
+  
