@@ -1,0 +1,63 @@
+body {
+    background: #121213;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .tabuleiro {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+  }
+  
+  .linha {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+  }
+  
+  .letra {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #222;
+  }
+  
+  .teclado {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 340px;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .tecla {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 30px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tecla.enter {
+    width: 60px;
+  }
+  
+  .tecla.backspace {
+    width: 60px;
+  }
+  
