@@ -1,0 +1,30 @@
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    width: 480px;
+    height: 480px;
+    border: 2px solid #000;
+  }
+  
+  .casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    user-select: none;
+  }
+  
+  .branca {
+    background-color: #ffffff;
+  }
+  
+  .preta {
+    background-color: #800000;
+  }
+  
+  .peca {
+    cursor: grab;
+  }

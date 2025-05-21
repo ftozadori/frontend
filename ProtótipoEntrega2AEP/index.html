@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Separação de Lixo</title>
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+  <h1>Simulador de Separação de Lixo</h1>
+  <p>Arraste o item para a lixeira correta</p>
+
+  <div class="container">
+    <div class="item" draggable="true" id="banana">Casca de Banana</div>
+    <div class="item" draggable="true" id="pet">Garrafa PET</div>
+    <div class="item" draggable="true" id="papelao">Caixa de Papelão</div>
+    <div class="item" draggable="true" id="pilha">Pilha Usada</div>
+  </div>
+
+  <div class="container">
+    <div class="lixeira" ondragover="allowDrop(event)" ondrop="drop(event, 'organico')">
+      <h3>Orgânico</h3>
+    </div>
+    <div class="lixeira" ondragover="allowDrop(event)" ondrop="drop(event, 'plastico')">
+      <h3>Plástico</h3>
+    </div>
+    <div class="lixeira" ondragover="allowDrop(event)" ondrop="drop(event, 'papel')">
+      <h3>Papel</h3>
+    </div>
+    <div class="lixeira" ondragover="allowDrop(event)" ondrop="drop(event, 'perigoso')">
+      <h3>Perigoso</h3>
+    </div>
+  </div>
+
+  <div class="feedback" id="feedback"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
