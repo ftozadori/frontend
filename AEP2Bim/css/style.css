@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #e9f7ef;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #2e8b57;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.item {
+  width: 120px;
+  padding: 12px;
+  background: #ffffff;
+  border: 2px solid #2e8b57;
+  border-radius: 8px;
+  cursor: grab;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  background-color: #e0ffe0;
+}
+
+.lixeira {
+  width: 160px;
+  height: 220px;
+  border: 3px dashed #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.lixeira h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.lixeira.organico { border-color: #6a994e; }
+.lixeira.plastico { border-color: #f77f00; }
+.lixeira.papel { border-color: #1d3557; }
+.lixeira.vidro { border-color: #4e79a7; }
+.lixeira.metal { border-color: #8d99ae; }
+
+.feedback {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.2em;
+  min-height: 24px;
+  transition: color 0.3s;
+}
+
+.feedback.success {
+  color: #1b5e20;
+  font-size: 1.5em;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Separação de Lixo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Simulador de Separação de Lixo</h1>
+  <h2>Arraste o item para a lixeira correta</h2>
+
+  <div class="container" id="itens-container">
+    <div class="item" draggable="true" id="banana">🍌 Casca de Banana</div>
+    <div class="item" draggable="true" id="pet">🧴 Garrafa PET</div>
+    <div class="item" draggable="true" id="papelao">📦 Caixa de Papelão</div>
+    <div class="item" draggable="true" id="papel">📝 Folha de Papel</div>
+    <div class="item" draggable="true" id="vidro">🍾 Garrafa de Vidro</div>
+    <div class="item" draggable="true" id="restoComida">🍕 Restos de Comida</div>
+    <div class="item" draggable="true" id="lata">🥫 Lata de Alumínio</div>
+    <div class="item" draggable="true" id="frascoVidro">🧪 Frasco de Vidro</div>
+    <div class="item" draggable="true" id="jornais">📰 Jornais Velhos</div>
+    <div class="item" draggable="true" id="revista">📖 Revista Usada</div>
+    <div class="item" draggable="true" id="sacola">🛍️ Sacola Plástica</div>
+    <div class="item" draggable="true" id="lataAco">🥫 Lata de Aço</div>
+    <div class="item" draggable="true" id="cartao">💳 Cartão de Plástico</div>
+  </div>
+
+  <div class="container">
+    <div class="lixeira organico" ondragover="allowDrop(event)" ondrop="drop(event, 'organico')">
+      <h3>🍌 Orgânico</h3>
+    </div>
+    <div class="lixeira plastico" ondragover="allowDrop(event)" ondrop="drop(event, 'plastico')">
+      <h3>🧴 Plástico</h3>
+    </div>
+    <div class="lixeira papel" ondragover="allowDrop(event)" ondrop="drop(event, 'papel')">
+      <h3>📦 Papel</h3>
+    </div>
+    <div class="lixeira vidro" ondragover="allowDrop(event)" ondrop="drop(event, 'vidro')">
+      <h3>🍾 Vidro</h3>
+    </div>
+    <div class="lixeira metal" ondragover="allowDrop(event)" ondrop="drop(event, 'metal')">
+      <h3>🥫 Metal</h3>
+    </div>
+  </div>
+
+  <div class="feedback" id="feedback"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
