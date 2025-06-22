@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Mercadinho</h1>
-    </header>
-    <main>
-        <div class="catalogo-produtos" id="catalogo-produtos">
+    <h1>Mercadinho Digital</h1>
+  </header>
+  <main>
+    <div id="login">
+      <input type="text" id="usuario" placeholder="Usuário">
+      <input type="password" id="senha" placeholder="Senha">
+      <button onclick="login()">Login</button>
+    </div>
 
-        </div>
-    </main>
+    <div id="app" style="display:none">
+      <h2>Catálogo de Produtos</h2>
+      <div id="catalogo-produtos"></div>
+
+      <h2>Carrinho de Compras</h2>
+      <div id="carrinho"></div>
+      <p style="text-align:right; font-size: 18px; font-weight: bold;">Total: R$ <span id="total">0.00</span></p>
+      <div style="text-align:right">
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+    </div>
+  </main>
     <script src="js/script.js"></script>
 </body>
 </html>
